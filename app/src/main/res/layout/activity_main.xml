@@ -1,0 +1,186 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.rps.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.5"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="name"
+            android:textSize="24sp"
+            android:textColor="#006600"
+            android:textStyle="bold"
+            android:inputType="textCapWords"
+            android:layout_weight="3"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="ok"
+            android:src="@drawable/pen"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/score_player"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="24sp"
+            android:textColor="#660000"
+            android:padding="8dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=":"
+            android:textSize="24sp"
+            android:textColor="#660000"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/score_comp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="24sp"
+            android:textColor="#660000"
+            android:padding="8dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Opponent"
+            android:textSize="24sp"
+            android:textColor="#006600"
+            android:textStyle="bold"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/move_player"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/k"/>
+
+        <ImageView
+            android:id="@+id/move"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/pk"/>
+
+        <ImageView
+            android:id="@+id/move_comp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/p"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="text"
+        android:textSize="36sp"
+        android:textColor="#660000"
+        android:background="#ffffff"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/rock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="rock"
+            android:layout_weight="1"
+            android:src="@drawable/k"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+
+        <ImageButton
+            android:id="@+id/paper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="paper"
+            android:layout_weight="1"
+            android:src="@drawable/p"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+
+        <ImageButton
+            android:id="@+id/scissors"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:onClick="scissors"
+            android:layout_weight="1"
+            android:src="@drawable/n"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="24sp"
+        android:textColor="#000066"
+        android:text="Finish"
+        android:onClick="finish"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="24sp"
+        android:textColor="#000066"
+        android:text="Replay"
+        android:onClick="reset"
+        android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
